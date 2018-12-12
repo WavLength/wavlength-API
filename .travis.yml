@@ -1,6 +1,9 @@
 language: csharp
 solution: WavLength.Api.sln
 mono: none
-dotnet: 1.1.5
+dotnet: 2.1.300
+install:
+ - dotnet restore
 script:
-- dotnet restore
+  - dotnet build
+os: linux
